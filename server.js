@@ -179,6 +179,13 @@ app.get('/about', (req, res) => {
   });
 });
 
+//go to project page
+app.get('/project', (req, res) => {
+  res.render('project.hbs', {
+    pageTitle: 'Project Page',
+  });
+});
+
 //bad - send back json with errorMessage
 app.get('/bad', (req, res) => {
   // res.send('Not able to route to that page!');
